@@ -1,0 +1,9 @@
+name: DragonPowerTest
+version: 1.0
+author: Reddy360
+main: pe.nn.connor.dragonpowerapitest.DragonPowerAPITest
+depend: [DragonPower]
+commands:
+  test:
+    description: Test
+    usage: Test
