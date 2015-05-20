@@ -14,7 +14,6 @@ import org.bukkit.plugin.java.JavaPlugin;
 import pe.nn.connor.dragonpower.DragonPower;
 import pe.nn.connor.dragonpower.DragonPowerAPI;
 import pe.nn.connor.dragonpower.dragons.Dragon;
-import pe.nn.connor.dragonpower.dragons.FireDragon;
 
 public class DragonPowerAPITest extends JavaPlugin{
 	private DragonPowerAPI api;
@@ -39,7 +38,7 @@ public class DragonPowerAPITest extends JavaPlugin{
 		Player player = (Player) sender;
 		if(args.length == 1){
 			if(args[0].equalsIgnoreCase("fire")){
-				api.setDragon(player, new FireDragon());
+				api.setDragon(player, api.getFireDragon());
 			}else if(args[0].equalsIgnoreCase("custom")){
 				api.setDragon(player, new CustomDragon());
 			}else if(args[0].equalsIgnoreCase("whoami")){
